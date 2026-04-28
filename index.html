@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script&family=Caveat&family=Orbitron:wght@500&family=Rajdhani:wght@500&family=Share+Tech+Mono&family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet">
+<title>TrackSys Timer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="nav-left">
+    <h2>TrackSys</h2>
+  </div>
+ 
+  <div class="nav-right">
+    
+    <select id="themeSelect">
+
+<option value="terracotta">Terracotta</option>
+<option value="pink">Soft Pink</option>
+<!-- <option value="beige">Warm Beige</option> -->
+
+<option value="midnight">Midnight Dark</option>
+<!-- <option value="ocean">Ocean Blue</option> -->
+<option value="forest">Forest Green</option>
+<!-- <option value="sunset">Sunset Orange</option> -->
+<option value="lavender">Lavender Purple</option>
+<option value="mono">Monochrome</option>
+<option value="neon">Neon Glow</option>
+<!-- <option value="coffee">Coffee Brown</option> -->
+<option value="ice">Ice Blue</option>
+    </select>
+    <button onclick="shareEvent()">Share</button>
+    <button onclick="resetApp()">New Event</button>
+  </div>
+  
+</header>
+
+<!-- INPUT -->
+<section id="inputSection" class="input-box">
+  <input type="text" id="eventName" placeholder="Event Name">
+  <input type="date" id="eventDate">
+  <input type="time" id="eventTime">
+  <button onclick="addEvent()">Start</button>
+</section>
+
+<!-- TIMER -->
+<section id="timerSection" class="hidden">
+  <h2 id="eventTitle"></h2>
+  <div id="timer"></div>
+ 
+  <!-- <div class="actions">
+    <button onclick="shareEvent()">Share</button>
+    <button onclick="resetApp()">New Event</button>
+  </div> -->
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
